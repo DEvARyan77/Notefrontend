@@ -70,7 +70,7 @@ function Home() {
   useEffect(() => {
     const fetchNotes = async () => {
       const token = document.cookie.split('; ').find(row => row.startsWith('token=')).split('=')[1];
-      const response = await fetch('http://localhost:8000/fetchNotes', {
+      const response = await fetch('https://tv5cv6-8000.csb.app/fetchNotes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -93,7 +93,7 @@ function Home() {
       }
 
       try {
-        const response = await fetch('http://localhost:8000/validate', {
+        const response = await fetch('https://tv5cv6-8000.csb.app/validate', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

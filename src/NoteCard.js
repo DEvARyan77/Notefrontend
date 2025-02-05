@@ -170,7 +170,7 @@ const NoteCard = ({ note,save }) => {
       formData.append("image", file); // Append the selected image
 
       try {
-        const response = await fetch("http://localhost:8000/addImage", {
+        const response = await fetch("https://tv5cv6-8000.csb.app/addImage", {
           method: "POST",
           body: formData,
         });
@@ -219,7 +219,7 @@ const NoteCard = ({ note,save }) => {
       console.log(pair[0] + ", " + pair[1]);
     }
     try {
-      const response = await fetch("http://localhost:8000/deleteImage", {
+      const response = await fetch("https://tv5cv6-8000.csb.app/deleteImage", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -282,7 +282,7 @@ const NoteCard = ({ note,save }) => {
       console.log(pair[0] + ", " + pair[1]);
     }
     try {
-      const response = await fetch("http://localhost:8000/saveHeading", {
+      const response = await fetch("https://tv5cv6-8000.csb.app/saveHeading", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -324,7 +324,7 @@ const NoteCard = ({ note,save }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/makeFavourite", {
+      const response = await fetch("https://tv5cv6-8000.csb.app/makeFavourite", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -362,7 +362,7 @@ const NoteCard = ({ note,save }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/deleteNote", {
+      const response = await fetch("https://tv5cv6-8000.csb.app/deleteNote", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',

@@ -44,7 +44,7 @@ const SaveOver = ({ transcripts, setTranscripts, cross, audioBlob, setAudioBlob,
     }
 
     try {
-      const response = await fetch('http://localhost:8000/notes', {
+      const response = await fetch('https://tv5cv6-8000.csb.app/notes', {
         method: 'POST',
         body: formData
       });

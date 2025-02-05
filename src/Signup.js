@@ -38,7 +38,7 @@ function Signup() {
       return;
     }
     
-    fetch('http://localhost:8000/signup',{
+    fetch('https://tv5cv6-8000.csb.app/signup',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
